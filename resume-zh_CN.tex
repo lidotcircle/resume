@@ -3,6 +3,9 @@
 % !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{progressbar}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 % \usepackage{NotoSansSC_external}
 % \usepackage{NotoSerifCJKsc_external}
@@ -13,12 +16,22 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{李典源}
-
-\basicInfo{
-  \email{maybeldy@foxmail.com} \textperiodcentered\ 
-  \phone{(+86) 156-59-772771} \textperiodcentered\ 
+\Large{
+  \begin{tabu}{ c l r }
+    \multirow{4}{1in}{\includegraphics[width=0.8in]{photo.jpg}} & \scshape{李典源} & {C\/ C++~}\progressbar{0.75} \\
+    & \phone{(+86) 156-597-72771} & {Java~}\progressbar{0.5} \\
+    & \email{maybeldy@foxmail.com} & {Typescript~}\progressbar{0.75} \\
+    & \github[github.com/lidotcircle]{https://github.com/lidotcircle} & {Python~}\progressbar{0.5}
+  \end{tabu}
 }
+\vskip 1.5em
+\large
+
+%\name{李典源}
+%\basicInfo{
+%  \email{maybeldy@foxmail.com} \textperiodcentered\ 
+%  \phone{(+86) 156-59-772771} \textperiodcentered\ 
+%}
  
 \section{\faGraduationCap\  教育背景}
 \datedsubsection{\textbf{福州大学}, 福州}{2020 -- 至今}
@@ -60,18 +73,22 @@
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C/C++ == Typescript > Rust == Python
+  \item 编程语言: C/C++ == Typescript > Java == Rust == Python
   \item 前端框架: Angular
+  \item 后端开发: Spring Boot
   \item 区块链: Hyperledger Fabric
   \item 平台: Linux
   \item 开发工具: Git, Docker
 \end{itemize}
 
+\section{\faArrowCircleRight\ 自我评价}
+做事耐心, 喜欢学习新技术和新知识, 热爱编程.
+
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
   \item 技术博客: http://lidotcircle.ltd
-  \item GitHub: https://github.com/lidotcircle
+%  \item GitHub: https://github.com/lidotcircle
   \item 语言: 英语 (CET-6)
 \end{itemize}
 
