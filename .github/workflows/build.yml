@@ -20,6 +20,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          artifacts: "./resume_zh-CN.pdf"
+          artifacts: "resume-zh_CN.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
 
