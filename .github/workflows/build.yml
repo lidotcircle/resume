@@ -3,7 +3,7 @@ name: Build Resume
 on:
   push:
     tags:
-      - v[0-9]+.[0-9]
+      - v[a-z]*[0-9]+.[0-9]
 
 jobs:
   build_pdf:
@@ -15,10 +15,11 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume-zh_CN.tex
+          latexmk_use_xelatex: true
       - name: release
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          artifacts: "./resume_zh-CN.pdf"
+          artifacts: "resume-zh_CN.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
 
