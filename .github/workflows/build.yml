@@ -1,0 +1,24 @@
+
+name: Build Resume
+on:
+  push:
+    tags:
+      - v[0-9]+.[0-9]
+
+jobs:
+  build_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume-zh_CN.tex
+      - name: release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          artifacts: "./resume_zh-CN.pdf"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
