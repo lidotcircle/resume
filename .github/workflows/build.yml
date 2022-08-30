@@ -3,7 +3,7 @@ name: Build Resume
 on:
   push:
     tags:
-      - v.*
+      - '*'
 
 jobs:
   build_pdf:
