@@ -120,3 +120,8 @@
   {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
+
+\newcommand{\proj}[3]{
+  {\par \textit{#1} ~ #2 \hfill #3 \par}
+  \vspace{0.5ex}
+}
