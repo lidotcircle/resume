@@ -16,10 +16,15 @@ jobs:
         with:
           root_file: resume-zh_CN.tex
           latexmk_use_xelatex: true
+      - name: Compile LaTeX document [no photo]
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume-zh_CN-no.tex
+          latexmk_use_xelatex: true
       - name: release
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          artifacts: "resume-zh_CN.pdf"
+          artifacts: "resume-zh_CN.pdf,resume-zh_CN-no.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
 
