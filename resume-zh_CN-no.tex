@@ -22,18 +22,20 @@
 }
 
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{福州大学}, \quad 福州}{2020年9月 -- 至今}
-\textit{在读硕士研究生}\ 计算机技术, 预计 2023 年 6 月毕业
+\datedsubsection{\textbf{福州大学}, \quad 福州}{2020年9月 -- 2023年9月}
+\textit{硕士}\ 计算机技术
 \datedsubsection{\textbf{福州大学},\quad 福州}{2015年9月 -- 2019年6月}
 \textit{学士}\ 土木工程
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{网龙网络有限公司} \quad 福州}{2021年8月 -- 2022年1月}
-\role{实习}{游戏安全程序员}
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{概伦电子福州分公司/福州芯智联科技有限公司}, \quad 福州}{2022年11月 -- 至今}
+\role{实习/全职}{高级研发工程师}
 \begin{onehalfspacing}
 \begin{itemize}
-  \item 主要进行游戏外挂样本分析、特征码提取
-  \item 一些样本分析软件的开发(反反调试、代码注入)
+  \item 开发PCB板文件储存功能
+  \item 二维计算几何算法(二维图形最近点、布尔算法、二维路径搜索)
+  \item PCB板自动布线(布线路径规划、规划路径详细布线、差分对布线、自动等长组)
 \end{itemize}
 \end{onehalfspacing}
 
@@ -48,15 +50,54 @@
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{网盘}}{2019年3月 -- 至今}
-\proj{个人项目}{Typescript, Angular, Express.js, typeorm, Docker}{https://github.com/lidotcircle/webdisk}
+\datedsubsection{\textbf{端口复用转发工具}}{2020年12月 -- 2025年3月}
+\proj{个人项目}{Rust}{https://github.com/lidotcircle/portForwarder}
 \begin{onehalfspacing}
 \begin{itemize}
-  \item 基于Web页面进行文件管理, 包括基本的文件管理操作、上传、下载、预览以及分享等功能, 并且支持多种后端的储存方式(硬盘、OSS、WebDAV)
-  \item 使用ToastUI Editor集成了Markdown笔记功能
-  \item 实现数据图表功能, 主要用于保存深度学习训练数据、结果, 可以作为tensorboard的替代品
+  \item 使用Rust实现基于mio的高性能TCP/UDP端口复用转发工具, 可以实现一个端口提供多个不同的服务如ssh,http,https,rdp
 \end{itemize}
 \end{onehalfspacing}
+
+\datedsubsection{\textbf{二维图形编辑器}}{2024年5月 -- 至今}
+\proj{个人项目}{C++/Javascript}{https://github.com/lidotcircle/2DataViewer}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 实现基础二维图形对象表示
+  \item 基于HTML Canvas以及WebGL实现的二维画布
+\end{itemize}
+\end{onehalfspacing}
+
+
+% \section{\faUsers\ 实习/项目经历}
+% \datedsubsection{\textbf{网龙网络有限公司} \quad 福州}{2021年8月 -- 2022年1月}
+% \role{实习}{游戏安全程序员}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 主要进行游戏外挂样本分析、特征码提取
+%   \item 一些样本分析软件的开发(反反调试、代码注入)
+% \end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{C99编译器}}{2022年1月 -- 至今}
+% \proj{个人项目}{C/C++}{https://github.com/lidotcircle/dcparse}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 实现基本的正则表达式, 主要为了实现不匹配的字符串可以不需要全部输入就可判定为不匹配 
+%   \item 实现 Tokenizer 和 Parser Generator 进行解析C99语法
+%   \item 利用以上工具实现一个简易的 C-like 计算器
+%   \item 根据C99标准实现C99的Parser和初步的语法检查, 代码生成部分还未实现
+% \end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{网盘}}{2019年3月 -- 至今}
+% \proj{个人项目}{Typescript, Angular, Express.js, typeorm, Docker}{https://github.com/lidotcircle/webdisk}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 基于Web页面进行文件管理, 包括基本的文件管理操作、上传、下载、预览以及分享等功能, 并且支持多种后端的储存方式(硬盘、OSS、WebDAV)
+%   \item 使用ToastUI Editor集成了Markdown笔记功能
+%   \item 实现数据图表功能, 主要用于保存深度学习训练数据、结果, 可以作为tensorboard的替代品
+% \end{itemize}
+% \end{onehalfspacing}
 
 % \datedsubsection{\textbf{Socks5代理}}{2019年4月 -- 至今}
 % \proj{个人项目}{C/C++}{https://github.com/lidotcircle/hula}
@@ -66,23 +107,20 @@
 % \end{itemize}
 % \end{onehalfspacing}
 
-\datedsubsection{\textbf{ScyllaMonitor}}{2021年11月 -- 至今}
-\proj{个人项目}{C/C++, Dear ImGUI}{https://github.com/lidotcircle/ScyllaHide}
-\begin{onehalfspacing}
-\begin{itemize}
-  \item 从ScyllaHide fork进行修改的反反调试、代码注入工具, 使用Dear ImGUI实现图形界面
-  \item 利用inline hook实现代码注入功能, 支持32位和64位的程序
-\end{itemize}
-\end{onehalfspacing}
+% \datedsubsection{\textbf{ScyllaMonitor}}{2021年11月 -- 至今}
+% \proj{个人项目}{C/C++, Dear ImGUI}{https://github.com/lidotcircle/ScyllaHide}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 从ScyllaHide fork进行修改的反反调试、代码注入工具, 使用Dear ImGUI实现图形界面
+%   \item 利用inline hook实现代码注入功能, 支持32位和64位的程序
+% \end{itemize}
+% \end{onehalfspacing}
 
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C/C++ == Typescript > Java == Python
-  \item 前端框架: Angular
-  \item 后端开发: Node.js、Spring Boot
-  \item 开发工具: Git, Docker
-  \item 深度学习: 基于对抗生成网络的图像翻译技术
+  \item 编程语言: C/C++ == Typescript/Javascript > Python == Rust
+  \item 开发工具: NeoVim, Git, Docker
 \end{itemize}
 
 % \section{\faArrowCircleRight\ 自我评价}
